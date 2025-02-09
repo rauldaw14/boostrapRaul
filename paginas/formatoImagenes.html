@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía sobre los formatos de imagen más utilizados en la web">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/css/styles.css" />
+    <title>Formatos de Imágenes para Web</title>
+    <style>
+        /* Opcional: Si necesitas personalizar algo de la apariencia de las imágenes o de los elementos en móviles */
+        
+    </style>
+</head>
+<body class="formato">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#jpg">JPG / JPEG</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#png">PNG</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#webp">WebP</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#avif">AVIF</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#svg">SVG</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="index.html">
+                        <button class="btn btn-primary" title="Visualizar publicación">
+                            Volver al admin
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <h1 class="formatoh1">Formatos de Imágenes para Web</h1>
+        <section id="png" class="my-5 row align-items-center">
+            <div class="col-md-6 col-12">
+                <h2>Formato PNG</h2>
+                <p>El formato PNG es ampliamente utilizado para gráficos con transparencia y sin pérdida de calidad.</p>
+                <ul>
+                    <li>Ideal para imágenes con fondo transparente.</li>
+                    <li>No pierde calidad al guardarse varias veces.</li>
+                    <li>Mayor tamaño de archivo en comparación con JPEG.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-12 text-center">
+                <img src="./Imagenes/png.webp" class="img-fluid" alt="Ejemplo de PNG">
+            </div>
+        </section>
+        
+        <section id="webp" class="my-5 row align-items-center flex-row-reverse">
+            <div class="col-md-6 col-12">
+                <h2>Formato WebP</h2>
+                <p>WebP es un formato moderno que ofrece alta calidad con menor tamaño de archivo.</p>
+                <ul>
+                    <li>Soporta compresión con y sin pérdida.</li>
+                    <li>Más eficiente que JPEG y PNG.</li>
+                    <li>No todos los navegadores antiguos lo soportan.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-12 text-center">
+                <img src="./Imagenes/webp.webp" class="img-fluid" alt="Ejemplo de WebP">
+            </div>
+        </section>
+        
+        <section id="avif" class="my-5 row align-items-center">
+            <div class="col-md-6 col-12">
+                <h2>Formato AVIF</h2>
+                <p>AVIF es un formato emergente con excelente compresión y calidad.</p>
+                <ul>
+                    <li>Menor tamaño que WebP y JPEG.</li>
+                    <li>Soporta HDR y transparencia.</li>
+                    <li>Compatibilidad aún en desarrollo.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-12 text-center">
+                <img src="./Imagenes/avif.png" class="img-fluid" alt="Ejemplo de AVIF">
+            </div>
+        </section>
+        
+        <section id="svg" class="my-5 row align-items-center flex-row-reverse">
+            <div class="col-md-6 col-12">
+                <h2>Formato SVG</h2>
+                <p>El formato SVG es ideal para gráficos vectoriales escalables.</p>
+                <ul>
+                    <li>Perfecto para logotipos e iconos.</li>
+                    <li>Basado en XML, permitiendo edición con código.</li>
+                    <li>No apto para fotografías.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-12 text-center">
+                <img src="./Imagenes/svg.jpg" class="img-fluid" alt="Ejemplo de SVG">
+            </div>
+        </section>
+
+        <section id="jpg" class="my-5 row align-items-center">
+            <div class="col-md-6 col-12">
+                <h2>Formato JPG</h2>
+                <p>JPG es uno de los más utilizados en la web debido a su alta compresión y calidad aceptable.</p>
+                <ul>
+                    <li>Alta compresión y calidad aceptable.</li>
+                    <li>Ideal para fotografías con muchos colores.</li>
+                    <li>Compresión con pérdida, lo que afecta la calidad si se comprime varias veces.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-12 text-center">
+                <img src="./Imagenes/jpg.webp" class="img-fluid" alt="Ejemplo de JPG">
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <!-- Sección de redes sociales a la izquierda -->
+            <div class="mb-3 text-start">
+                <p><strong>Síguenos en redes sociales:</strong></p>
+                <a href="https://facebook.com" target="_blank" class="text-white me-3">Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="text-white me-3">Twitter</a>
+                <a href="https://instagram.com" target="_blank" class="text-white">Instagram</a>
+            </div>
+        
+            <!-- Sección de contacto a la derecha alineada al principio -->
+            <div class="text-start mb-3">
+                <p><strong>Contacto:</strong></p>
+                <p>Email: <a href="mailto:1832859@alu.murciaeduca.es" class="text-white text-decoration-none border-bottom border-light">1832859@alu.murciaeduca.es</a></p>
+                <p>Teléfono: <span class="text-white">+34 123 456 789</span></p>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <p>&copy; 2025, creado por Raúl Alcaraz</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
