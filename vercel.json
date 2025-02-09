@@ -1,5 +1,5 @@
 {
   "routes": [
-    { "src": "/dist/css/(.*)", "dest": "/dist/css/$1" }
+    { "src": "/css/(.*)", "dest": "/dist/css/$1" }
   ]
 }
