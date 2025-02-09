@@ -12787,7 +12787,7 @@ body {
 
 /*Css pagina formato */
 .formato {
-  background-image: url("../../public/Imagenes/fondo1.webp");
+  background-image: url("../Imagenes/fondo1.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
