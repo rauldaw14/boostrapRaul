@@ -12990,6 +12990,11 @@ body {
   transform: scale(1.05);
 }
 
+@media (max-width: 1400px) {
+  .propiedades .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 200px) {
   .propiedades {
     font-size: 6px;
