@@ -12448,7 +12448,7 @@ body {
 
 /*Publicaciones */
 .formato {
-  background-image: url('../../public/Imagenes/fondo1.webp');
+  background-image: url('../../public/Imagenes/fondo1.webp') !important;
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -12456,7 +12456,7 @@ body {
 }
 
 .propiedades {
-  background-image: url('../../public/Imagenes/fondo2.jfif  ');
+  background-image: url('../../public/Imagenes/fondo2.jfif  ') !important;
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -12579,7 +12579,7 @@ body {
 }
 
 .propiedades .backImagen{
-  background-image: url('../../public/Imagenes/fondo1.webp'); 
+  background-image: url('../../public/Imagenes/fondo1.webp') !important; 
   background-size: cover;                  
   background-position: center;             
   height: 200px;                           

@@ -12787,7 +12787,7 @@ body {
 
 /*Css pagina formato */
 .formato {
-  background-image: url("/Imagenes/fondo1.webp");
+  background-image: url("/Imagenes/fondo1.webp") !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12795,7 +12795,7 @@ body {
 }
 .propiedades {
   
-  background-image: url("/Imagenes/fondo2.jfif");
+  background-image: url("/Imagenes/fondo2.jfif") !important;
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -12918,7 +12918,7 @@ body {
 }
 
 .propiedades .backImagen{
-  background-image: url("/Imagenes/fondo1.webp");
+  background-image: url("/Imagenes/fondo1.webp") !important;
   background-size: cover;                  
   background-position: center;             
   height: 200px;                           
