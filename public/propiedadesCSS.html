@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía sobre las propiedades CSS para imágenes">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="../dist/css/styles.css" />
+    <title>Propiedades CSS para Imágenes</title>
+</head>
+<body class="propiedades">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#background">Background Image</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#object">Object Fit & Position</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#border">Bordes y Sombras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#filter">Filtros en Imágenes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#animation">Animaciones CSS</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="index.html">
+                        <button class="btn btn-primary" title="Visualizar publicación">
+                            Volver al admin
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    
+        <main class="container my-5">
+            <h1 class="text-center">Propiedades CSS para Imágenes</h1>
+    
+           
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <section id="background" class="section-card">
+                        <h2>Background Image</h2>
+                        <p>La propiedad <code>background-image</code> permite establecer una imagen de fondo en un elemento.</p>
+                        <ul>
+                            <li><code>background-position</code>: Define la posición.</li>
+                            <li><code>background-size</code>: Controla el ajuste de la imagen.</li>
+                            <li><code>background-attachment</code>: Determina si se desplaza con la página.</li>
+                        </ul>
+                        <div class="backImagen"></div>
+                    </section>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <section id="object" class="section-card">
+                        <h2>Object Fit & Position</h2>
+                        <p>Podemos modificar cómo se visualiza una imagen usando <code>object-fit</code> , <code>object-position</code> , <code>object-fit: cover;</code>.</p>
+                        <img src="Imagenes/imagenFormato.jfif" class="img-fluid img-card object"  alt="Ejemplo Object Fit">
+                    </section>
+                </div>
+            </div>
+    
+           
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <section id="border" class="section-card">
+                        <h2>Bordes y Sombras</h2>
+                        <p>Podemos agregar bordes y sombras a imágenes para mejorar su presentación visual.</p>
+                        <p><code>border</code> y <code>box-shadow</code></p>
+                        <img src="Imagenes/avif.png" class="img-fluid img-card bordes"  alt="Ejemplo de Bordes y Sombras">
+                        
+                    </section>
+                </div>
+            </div>
+    
+            
+            <div class="row mt-4">
+                <div class="col-12 col-md-6 mb-4">
+                    <section id="filter" class="section-card">
+                        <h2>Filtros en Imágenes</h2>
+                        <p>Podemos aplicar filtros a las imágenes usando CSS, como escala de grises, desenfoque o brillo.</p>
+                        <p ><code>filter: grayscale(100%);</code></p>
+                        <img src="Imagenes/jpg.webp" class="img-fluid img-card filtroGris"  alt="Ejemplo de Filtros">
+                        
+                    </section>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <section id="animation" class="section-card">
+                        <h2>Animaciones en Imágenes</h2>
+                        <p>Podemos animar imágenes con transiciones y efectos en CSS.</p>
+                        <p class="mt-2 text-center"><code>transition: transform 0.5s ease-in-out;</code></p>
+                        <img src="Imagenes/png.webp" class="img-fluid img-card transicion"  alt="Ejemplo de Animaciones">
+                        
+                    </section>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <section id="other-properties" class="section-card">
+                        <h2>Otras Propiedades CSS para Imágenes</h2>
+                        <p>Existen otras propiedades CSS que pueden transformar la apariencia de las imágenes, proporcionando efectos y estilización adicional. Algunas de estas propiedades son:</p>
+                        <ul>
+                            <li><strong>clip-path</strong>: Permite recortar imágenes en formas específicas, como círculos o polígonos.</li>
+                            <li><strong>opacity</strong>: Controla la opacidad de una imagen, permitiendo que sea más transparente.</li>
+                        </ul>
+                        <h3 >Ejemplos:</h3>
+
+                        <h4>clip-path</h4>
+                        <p><code>clip-path: circle(50%);</code></p>
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="Imagenes/webp.webp" class="img-fluid recorte" alt="Ejemplo de clip-path">
+                        </div>
+                      
+            
+                   
+                        <h4 >opacity</h4>
+                        <p ><code>opacity: 0.2;</code></p>
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="Imagenes/jpg.webp" class="img-fluid opacidad"  alt="Ejemplo de opacity">
+                        </div>
+                        
+                    </section>
+                </div>
+            </div>
+        </main>
+    
+        <footer class="bg-dark text-white py-5">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+               
+                <div class="mb-3 text-start">
+                    <p><strong>Síguenos en redes sociales:</strong></p>
+                    <a href="https://facebook.com" target="_blank" class="text-white me-3">Facebook</a>
+                    <a href="https://twitter.com" target="_blank" class="text-white me-3">Twitter</a>
+                    <a href="https://instagram.com" target="_blank" class="text-white">Instagram</a>
+                </div>
+            
+                
+                <div class="text-start mb-3">
+                    <p><strong>Contacto:</strong></p>
+                    <p>Email: <a href="mailto:1832859@alu.murciaeduca.es" class="text-white text-decoration-none border-bottom border-light">1832859@alu.murciaeduca.es</a></p>
+                    <p>Teléfono: <span class="text-white">+34 123 456 789</span></p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <p>&copy; 2025, creado por Raúl Alcaraz</p>
+            </div>
+        </footer>
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
