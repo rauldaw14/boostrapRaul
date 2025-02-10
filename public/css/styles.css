@@ -12794,7 +12794,7 @@ body {
   background-attachment: fixed;
 }
 .propiedades {
-  background-image: url('../../public/Imagenes/fondo2.jfif  ');
+  
   background-image: url("/Imagenes/fondo2.jfif");
   background-size: cover; 
   background-position: center; 
@@ -12919,7 +12919,6 @@ body {
 
 .propiedades .backImagen{
   background-image: url("/Imagenes/fondo1.webp");
-  background-image: url('../../public/Imagenes/fondo1.webp'); 
   background-size: cover;                  
   background-position: center;             
   height: 200px;                           
