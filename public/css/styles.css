@@ -12952,7 +12952,7 @@ height: 200px;
 }
 
 .propiedades .recorte  { 
-clip-path: circle(50%);
+clip-path: circle(50%) !important;
 width: 200px;
 height: 200px;
 }

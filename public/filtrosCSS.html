@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía sobre los filtros CSS para imágenes">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="../dist/css/styles.css" />
+    <title>Filtros CSS para Imágenes</title>
+</head>
+<body class="filtros">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#brightness">Brillo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contrast">Contraste</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#saturation">Saturación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#hue">Tono</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#blur">Desenfoque</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#grayscale">Escala de Grises</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="index.html">
+                        <button class="btn btn-primary" title="Visualizar publicación">
+                            Volver al admin
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container my-5">
+        <h1 class="text-center">Filtros CSS para Imágenes</h1>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <section id="brightness" class="section-card ">
+                    <h2>Brillo</h2>
+                    <p>El filtro <code>brightness()</code> ajusta la luminosidad de la imagen.</p>
+                    <p>Ejemplo con 150% de brillo:</p>
+                    <p><code>filter: brightness(150%);</code></p>
+                    <img src="Imagenes/fondo2.jfif" class="img-fluid filtro-brillo" alt="Ejemplo de brillo">
+                </section>
+            </div>
+            <div class="col-md-6 mb-4">
+                <section id="contrast" class="section-card">
+                    <h2>Contraste</h2>
+                    <p>El filtro <code>contrast()</code> aumenta o disminuye la diferencia entre los colores.</p>
+                    <p>Ejemplo con 200% de contraste:</p>
+                    <p><code>filter: contrast(200%);</code></p>
+                    <img src="Imagenes/imagenFormato.jfif" class="img-fluid filtro-contraste" alt="Ejemplo de contraste">
+                </section>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <section id="invert" class="section-card">
+                <h2>Inversión de Colores</h2>
+                <p>El filtro <code>invert()</code> invierte los colores de la imagen, creando un efecto negativo.</p>
+                <p>Ejemplo con un 100% de inversión de colores:</p>
+                <p><code>filter: invert(100%);</code></p>
+                <img src="Imagenes/png.webp" class="img-fluid filtro-invert" alt="Ejemplo de inversión de colores">
+            </section>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+                <section id="saturation" class="section-card">
+                    <h2>Saturación</h2>
+                    <p>El filtro <code>saturate()</code> ajusta la intensidad de los colores.</p>
+                    <p>Ejemplo con 300% de saturación:</p>
+                    <p><code>filter: saturate(300%);</code></p>
+                    <img src="Imagenes/fondo1.webp" class="img-fluid filtro-saturacion" alt="Ejemplo de saturación">
+                </section>
+            </div>
+            <div class="col-md-6 mb-4">
+                <section id="hue" class="section-card">
+                    <h2>Tono</h2>
+                    <p>El filtro <code>hue-rotate()</code> rota el matiz de los colores.</p>
+                    <p>Ejemplo con una rotación de 90 grados:</p>
+                    <p><code>filter: hue-rotate(90deg);</code></p>
+                    <img src="Imagenes/webp.webp" class="img-fluid filtro-hue" alt="Ejemplo de tono">
+                </section>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="">
+                <section id="blur" class="section-card">
+                    <h2>Desenfoque</h2>
+                    <p>El filtro <code>blur()</code> genera un efecto de desenfoque.</p>
+                    <p>Ejemplo con 5 píxeles de desenfoque:</p>
+                    <p><code>filter: blur(5px);</code></p>
+                    <img src="Imagenes/jpg.webp" class="img-fluid filtro-blur" alt="Ejemplo de desenfoque">
+                </section>
+            </div>
+        </div>
+        
+</main>
+    
+    <footer class="bg-dark text-white py-5">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+           
+            <div class="mb-3 text-start">
+                <p><strong>Síguenos en redes sociales:</strong></p>
+                <a href="https://facebook.com" target="_blank" class="text-white me-3">Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="text-white me-3">Twitter</a>
+                <a href="https://instagram.com" target="_blank" class="text-white">Instagram</a>
+            </div>
+        
+            
+            <div class="text-start mb-3">
+                <p><strong>Contacto:</strong></p>
+                <p>Email: <a href="mailto:1832859@alu.murciaeduca.es" class="text-white text-decoration-none border-bottom border-light">1832859@alu.murciaeduca.es</a></p>
+                <p>Teléfono: <span class="text-white">+34 123 456 789</span></p>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <p>&copy; 2025, creado por Raúl Alcaraz</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

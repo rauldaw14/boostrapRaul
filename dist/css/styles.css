@@ -12780,6 +12780,25 @@ body {
   font-size: 0.75rem;
   border-radius: 0.375rem !important;
 } /*# sourceMappingURL=styles.css.map */
+/*Modo noche*/
+.dark-mode {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .navbar {
+  background-color: #2c2c2c !important;
+}
+
+.dark-mode .card {
+  background-color: #2c2c2c !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .sb-sidenav {
+  background-color: #222 !important;
+}
+
 /* Cuando bloqueas la publicacion*/
 .publicacion-bloqueada {
   opacity: 0.5;
@@ -12802,6 +12821,14 @@ body {
   background-attachment: fixed;
 }
 
+.filtros {
+  background-image: url("../../public/Imagenes/fondo3.webp  ") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .formato .navbar {
   background: linear-gradient(to right, #2575fc, yellow) !important;
   position: fixed;
@@ -12811,19 +12838,22 @@ body {
 }
 
 .formato .navbar-nav .nav-link,
-.propiedades .navbar-nav .nav-link {
+.propiedades .navbar-nav .nav-link,
+.filtros .navbar-nav .nav-link {
   font-size: 1.7rem;
   color: white !important;
   transition: color 0.3s ease-in-out;
 }
 
 .formato .navbar .nav-link:hover,
-.propiedades .navbar .nav-link:hover {
+.propiedades .navbar .nav-link:hover,
+.filtros .navbar .nav-link:hover {
   color: #ffd700 !important;
 }
 
 .formato ul li,
-.propiedades ul li {
+.propiedades ul li,
+.filtros ul li {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -12840,7 +12870,8 @@ body {
 }
 
 .formato .img-fluid,
-.propiedades .img-fluid {
+.propiedades .img-fluid,
+.filtros .img-fluid {
   max-width: 100%;
   height: auto;
   max-height: 300px;
@@ -12849,7 +12880,8 @@ body {
 }
 
 .formato section,
-.propiedades section {
+.propiedades section,
+.filtros section {
   padding: 80px 0;
   margin-bottom: 50px;
 }
@@ -12891,7 +12923,8 @@ body {
   color: white !important;
 }
 
-.propiedades section {
+.propiedades section,
+.filtros section {
   background: white;
   padding: 40px;
   border-radius: 10px;
@@ -12949,7 +12982,7 @@ body {
 }
 
 .propiedades .recorte {
-  clip-path: circle(50%);
+  clip-path: circle(50%) !important;
   width: 200px;
   height: 200px;
 }
@@ -12960,12 +12993,14 @@ body {
   height: 200px;
 }
 
-.propiedades .row {
+.propiedades .row,
+.filtros .row {
   display: flex;
   align-items: stretch;
 }
 
-.propiedades .section-card {
+.propiedades .section-card,
+.filtros .section-card {
   height: 100%;
   min-height: 350px;
   display: flex;
@@ -12973,7 +13008,8 @@ body {
   justify-content: space-between;
 }
 
-.propiedades .section-card img {
+.propiedades .section-card img,
+.filtros .section-card img {
   display: block;
   margin: 10px auto;
   max-width: 100%;
@@ -12991,17 +13027,64 @@ body {
 }
 
 @media (max-width: 1400px) {
-  .propiedades .navbar-nav .nav-link {
+  .propiedades .navbar-nav .nav-link,
+  .filtros .navbar-nav .nav-link {
     font-size: 1rem;
   }
 }
 @media (max-width: 200px) {
-  .propiedades {
+  .propiedades,
+  .filtros {
     font-size: 6px;
   }
-  .propiedades h1, h2, h3 {
+  .propiedades h1, h2, h3,
+  .filtros h1, h2, h3 {
     font-size: 12px;
   }
+}
+/*filtros*/
+.filtros .navbar {
+  background: linear-gradient(90deg, #ff7f50, #ff6347);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.filtros .btn-primary:hover {
+  background-color: yellow !important;
+  color: black !important;
+}
+
+.filtros h1 {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.filtros .fi.filtro-brillo {
+  filter: brightness(150%);
+}
+
+.filtros .filtro-contraste {
+  filter: contrast(200%);
+}
+
+.filtros .filtro-saturacion {
+  filter: saturate(300%);
+}
+
+.filtros .filtro-hue {
+  filter: hue-rotate(90deg);
+}
+
+.filtros .filtro-blur {
+  filter: blur(5px);
+}
+
+.filtros .filtro-invert {
+  filter: invert(100%);
 }
 
 /*# sourceMappingURL=styles.css.map */
