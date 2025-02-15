@@ -12781,32 +12781,19 @@ body {
   border-radius: 0.375rem !important;
 } /*# sourceMappingURL=styles.css.map */
 
-/*Modo noche*/
+
 .dark-mode {
   background-color: #1e1e1e !important;
   color: #ffffff !important;
 }
-
 .dark-mode .navbar {
   background-color: #2c2c2c !important;
 }
-
-.dark-mode .card {
+.dark-mode .card, .dark-mode .sb-sidenav {
   background-color: #2c2c2c !important;
   color: #ffffff !important;
 }
 
-.dark-mode .sb-sidenav {
-  background-color: #222 !important;
-}
-
-
-/* Cuando bloqueas la publicacion*/
-.publicacion-bloqueada {
-  opacity: 0.5;
-}
-
-/*Css pagina formato */
 .formato {
   background-image: url("/Imagenes/fondo1.webp") !important;
   background-size: cover;
@@ -12814,124 +12801,224 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .propiedades {
-  
   background-image: url("/Imagenes/fondo2.jfif") !important;
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .filtros {
-  background-image: url('/Imagenes/fondo3.webp  ') !important;
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
+  background-image: url("/Imagenes/fondo3.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.formato  .navbar {
-  background: linear-gradient(to right, #2575fc,yellow) !important;
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
 }
+.navbar.formato {
+  background: linear-gradient(to right, #2575fc, yellow) !important;
+}
+.navbar.propiedades {
+  background: linear-gradient(90deg, #007bff, #6610f2) !important;
+}
+.navbar.filtros {
+  background: linear-gradient(90deg, #ff7f50, #ff6347) !important;
+}
 
-
-
-.formato .navbar-nav .nav-link,
-.propiedades .navbar-nav .nav-link,
-.filtros .navbar-nav .nav-link {
+.navbar-nav .nav-link {
   font-size: 1.7rem;
   color: white !important;
   transition: color 0.3s ease-in-out;
 }
-
-.formato .navbar .nav-link:hover,
-.propiedades .navbar .nav-link:hover,
-.filtros .navbar .nav-link:hover{
+.navbar-nav .nav-link:hover {
   color: #ffd700 !important;
 }
 
-.formato ul li,
-.propiedades ul li,
-.filtros ul li {
-  padding-left: 20px; 
-  padding-right: 20px;
-}
-
-
-.formato .btn-primary:hover {
+.btn-primary:hover {
   background-color: blue !important;
   color: white !important;
 }
 
-.formato h1 {
+section {
+  padding: 80px 0;
+  margin-bottom: 50px;
+}
+section:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+section:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+.formato .navbar {
+  background: linear-gradient(to right, #2575fc, yellow) !important;
+}
+.formato h1, .formato .h1 {
   text-align: center;
   margin-top: 150px;
   margin-bottom: 50px;
 }
-
-
-
-.formato .img-fluid,
-.propiedades .img-fluid,
-.filtros .img-fluid {
+.formato ul li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.formato .img-fluid {
   max-width: 100%;
   height: auto;
   max-height: 300px;
   max-width: 400px;
-  object-fit: cover; 
+  object-fit: cover;
 }
-.formato section ,
-.propiedades section,
-.filtros section{
-  padding: 80px 0; 
-  margin-bottom: 50px; 
-}
-
-.formato section:nth-child(odd) {
-  background-color: #f8f9fa; 
-}
-
-.formato section:nth-child(even) {
-  background-color: #e9ecef; 
-}
-
-
 @media (max-width: 430px) {
   .formato .img-fluid {
-    max-width: 40%;  
+    max-width: 40%;
     max-height: 150px;
   }
 }
-
 @media (max-width: 220px) {
-
-  footer p {
-    font-size: 0.5rem;  
+  .formato footer p {
+    font-size: 0.5rem;
   }
 }
 
-/*Formato especifico para pagina formatos*/
 .propiedades {
   background-color: #f8f9fa;
 }
-.propiedades .navbar{
-    background: linear-gradient(90deg, #007bff, #6610f2);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+.propiedades .navbar {
+  background: linear-gradient(90deg, #007bff, #6610f2);
 }
-
 .propiedades .btn-primary:hover {
   background-color: orange !important;
   color: white !important;
 }
-.propiedades section,
+.propiedades h1, .propiedades .h1 {
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+.propiedades h2, .propiedades .h2 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.propiedades section {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.propiedades .backImagen {
+  background-image: url("/Imagenes/fondo1.webp") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 200px;
+}
+.propiedades .object {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 200px;
+}
+.propiedades .bordes {
+  border: 5px solid #007bff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 250px;
+}
+.propiedades .filtroGris {
+  filter: grayscale(100%);
+  width: 100%;
+  height: 200px;
+}
+.propiedades .transicion {
+  transition: transform 0.5s ease-in-out !important;
+}
+.propiedades .transicion:hover {
+  transform: translateX(100px) !important;
+}
+.propiedades .recorte {
+  clip-path: circle(50%) !important;
+  width: 200px;
+  height: 200px;
+}
+.propiedades .opacidad {
+  opacity: 0.2;
+  width: 200px;
+  height: 200px;
+}
+.propiedades .row {
+  display: flex;
+  align-items: stretch;
+}
+.propiedades .section-card {
+  height: 100%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.propiedades .section-card img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto;
+}
+.propiedades .img-fluid {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  max-width: 400px;
+  object-fit: cover;
+}
+.propiedades .img-card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 220px) {
+  .propiedades footer p {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 200px) {
+  .propiedades .filtros {
+    font-size: 6px;
+  }
+  .propiedades h1, .propiedades .h1, .propiedades h2, .propiedades .h2, .propiedades h3, .propiedades .h3 {
+    font-size: 12px;
+  }
+}
+.propiedades .img-card:hover {
+  transform: scale(1.05);
+}
+
+.filtros .navbar {
+  background: linear-gradient(90deg, #ff7f50, #ff6347) !important;
+}
+.filtros .btn-primary:hover {
+  background-color: yellow !important;
+  color: black !important;
+}
+.filtros h1, .filtros .h1 {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  color: white;
+}
 .filtros section {
   background: white;
   padding: 40px;
@@ -12939,163 +13026,64 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
-.propiedades h1 {
-  text-align: center;
-  margin-top: 150px;
-  margin-bottom: 50px;
-  color:white;
+.filtros .row {
+  display: flex;
+  align-items: stretch;
 }
-.propiedades  h2 {
-  color: #007bff;
-  border-bottom: 2px solid #007bff;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-.propiedades .backImagen{
-  background-image: url("/Imagenes/fondo1.webp") !important;
-  background-size: cover;                  
-  background-position: center;             
-  height: 200px;                           
-}
-
-.propiedades .object{
-  object-fit: cover;      
-  object-position: center; 
-  width: 100%;             
-  height: 200px;          
-}
-
-.propiedades .bordes{
-  border: 5px solid #007bff;               
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
-    width: 100%;                             
-    height: 250px;                         
-}
-.propiedades .filtroGris{
-filter: grayscale(100%);  
-width: 100%;            
-height: 200px;          
-}
-
-.propiedades .transicion{
-  transition: transform 0.5s ease-in-out !important;
-}
-
-.propiedades .transicion:hover{
-  transform: translateX(100px) !important;
-}
-
-.propiedades .recorte  { 
-clip-path: circle(50%) !important;
-width: 200px;
-height: 200px;
-}
-
-.propiedades .opacidad{
-  opacity: 0.2  ; 
-  width: 200px;
-  height: 200px;
-}
-
-.propiedades .row,
-.filtros .row{
-   
-    display: flex;
-    align-items: stretch; 
-
-}
-.propiedades .section-card,
 .filtros .section-card {
-  height: 100%; 
-  min-height: 350px; 
+  height: 100%;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
-
-.propiedades .section-card img,
 .filtros .section-card img {
-  display: block; 
-  margin: 10px auto; 
-  max-width: 100%; 
-  height: auto; 
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto;
 }
-
-.propiedades .img-card {
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+.filtros .img-fluid {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  max-width: 400px;
+  object-fit: cover;
 }
-
-.propiedades .img-card:hover {
-  transform: scale(1.05);
-}
-
-@media (max-width: 1400px) {  
-  .propiedades .navbar-nav .nav-link,
-  .filtros .navbar-nav .nav-link {
-    font-size: 1.0rem;  
+@media (max-width: 220px) {
+  .filtros footer p {
+    font-size: 0.5rem;
   }
- 
 }
-@media (max-width: 200px) {  
-  .propiedades,
-  .filtros {
-      font-size: 6px;  
+@media (max-width: 200px) {
+  .filtros .propiedades {
+    font-size: 6px;
   }
-  .propiedades h1 ,h2,h3,
-  .filtros h1 ,h2,h3{
+  .filtros h1, .filtros .h1, .filtros h2, .filtros .h2, .filtros h3, .filtros .h3 {
     font-size: 12px;
   }
 }
-
-/*filtros*/
-
-
-
-.filtros .navbar{
-  background: linear-gradient(90deg, #ff7f50, #ff6347);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2;
+.filtros .row {
+  display: flex;
+  align-items: stretch;
 }
-
-.filtros .btn-primary:hover {
-  background-color: yellow !important;
-  color: black !important;
-}
-
-.filtros h1 {
-  text-align: center;
-  margin-top: 150px;
-  margin-bottom: 50px;
-  color:white;
-}
-
-
-
-.filtros .fi.filtro-brillo{
+.filtros .filtro-brillo {
   filter: brightness(150%);
 }
-
 .filtros .filtro-contraste {
   filter: contrast(200%);
 }
-
 .filtros .filtro-saturacion {
   filter: saturate(300%);
 }
-
 .filtros .filtro-hue {
   filter: hue-rotate(90deg);
 }
-
 .filtros .filtro-blur {
   filter: blur(5px);
 }
-
-.filtros .filtro-invert{
+.filtros .filtro-invert {
   filter: invert(100%);
 }
+
+/*# sourceMappingURL=styles.css.map */

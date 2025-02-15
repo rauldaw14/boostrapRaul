@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Guía sobre los filtros CSS para imágenes">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="../dist/css/styles.css" />
     <title>Filtros CSS para Imágenes</title>
 </head>
@@ -20,10 +20,10 @@
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="#brightness">Brillo</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contrast">Contraste</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#saturation">Saturación</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#hue">Tono</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#blur">Desenfoque</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#grayscale">Escala de Grises</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#inversion">Inversión</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#saturacion">Saturación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tono">Tono</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#desenfoque">Desenfoque</a></li>
                     </ul>
                 </div>
                 <div>
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="col-md-12">
-            <section id="invert" class="section-card">
+            <section id="inversion" class="section-card">
                 <h2>Inversión de Colores</h2>
                 <p>El filtro <code>invert()</code> invierte los colores de la imagen, creando un efecto negativo.</p>
                 <p>Ejemplo con un 100% de inversión de colores:</p>
@@ -71,7 +71,7 @@
         </div>
         <div class="row mt-4">
             <div class="col-md-6 mb-4">
-                <section id="saturation" class="section-card">
+                <section id="saturacion" class="section-card">
                     <h2>Saturación</h2>
                     <p>El filtro <code>saturate()</code> ajusta la intensidad de los colores.</p>
                     <p>Ejemplo con 300% de saturación:</p>
@@ -80,7 +80,7 @@
                 </section>
             </div>
             <div class="col-md-6 mb-4">
-                <section id="hue" class="section-card">
+                <section id="tono" class="section-card">
                     <h2>Tono</h2>
                     <p>El filtro <code>hue-rotate()</code> rota el matiz de los colores.</p>
                     <p>Ejemplo con una rotación de 90 grados:</p>
@@ -92,7 +92,7 @@
 
         <div class="row mt-4">
             <div class="">
-                <section id="blur" class="section-card">
+                <section id="desenfoque" class="section-card">
                     <h2>Desenfoque</h2>
                     <p>El filtro <code>blur()</code> genera un efecto de desenfoque.</p>
                     <p>Ejemplo con 5 píxeles de desenfoque:</p>
