@@ -12618,4 +12618,25 @@ section:nth-child(even) {
   filter: invert(100%);
 }
 
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: red;
+  }
+}
+.h1-animado {
+  animation: colorChange 3s infinite alternate ease-in-out;
+}
+
 /*# sourceMappingURL=styles.css.map */
