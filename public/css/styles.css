@@ -5096,6 +5096,10 @@ textarea.form-control-lg {
   transition: all 0.3s ease-in-out;
 }
 
+.publi{
+  margin-bottom: 20px;
+}
+
 .alert {
   --bs-alert-bg: transparent;
   --bs-alert-padding-x: 1rem;
