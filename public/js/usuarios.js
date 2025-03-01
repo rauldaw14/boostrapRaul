@@ -2,21 +2,17 @@ document.addEventListener("DOMContentLoaded", function () {
     let isEditing = false;
     let editingRow = null;
 
-    // Mostrar el modal en modo "Añadir"
     document.getElementById("addEditUserModalLabel").textContent = "Añadir Usuario";
     document.getElementById("saveUser").textContent = "Añadir Usuario";
 
-    // Botón de Añadir nuevo usuario
     document.querySelector(".btn-primary").addEventListener("click", function () {
         document.getElementById("addEditUserForm").reset();
         isEditing = false;
         editingRow = null;
-
         document.getElementById("addEditUserModalLabel").textContent = "Añadir Usuario";
         document.getElementById("saveUser").textContent = "Añadir Usuario";
     });
 
-    // Guardar/actualizar usuario
     document.getElementById("saveUser").addEventListener("click", function () {
         let nombre = document.getElementById("userName").value;
         let apellidos = document.getElementById("userLastName").value;
@@ -54,9 +50,34 @@ document.addEventListener("DOMContentLoaded", function () {
             newRow.insertCell(3).textContent = dob;
             newRow.insertCell(4).textContent = country;
             newRow.insertCell(5).textContent = city;
+
+            let estadoCell = newRow.insertCell(6);
+            estadoCell.textContent = "Activo";
+            estadoCell.classList.add("estado");
+
+            let accionesCell = newRow.insertCell(7);
+            accionesCell.innerHTML = `
+                <button class="btn btn-warning btn-sm" onclick="confirmAction('bloquear', this)">
+                    <i class="fas fa-lock"></i>
+                </button>
+                <button class="btn btn-danger btn-sm" onclick="confirmAction('eliminar', this)">
+                    <i class="fas fa-trash"></i>
+                </button>
+                <a href="usuario1.html">
+                    <button class="btn btn-info btn-sm" title="Visualizar usuario">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </a>
+                <button class="btn btn-warning btn-sm" onclick="editUser(this.closest('tr'))">
+                    <i class="fas fa-edit"></i>
+                </button>`;
         }
 
-        new bootstrap.Modal(document.getElementById('addEditUserModal')).hide();
+        let modalElement = document.getElementById('addEditUserModal');
+        let modalInstance = bootstrap.Modal.getInstance(modalElement);
+        if (modalInstance) {
+            modalInstance.hide();
+        }
     });
 
     // Función para editar usuario
