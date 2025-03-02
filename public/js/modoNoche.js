@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggleDarkModeButton = document.getElementById("toggleDarkMode");
     const body = document.body;
 
-    // Comprobar si el usuario ya tiene el modo oscuro activado
+    
     if (localStorage.getItem("darkMode") === "enabled") {
         body.classList.add("dark-mode");
         toggleDarkModeButton.textContent = "Modo Día";

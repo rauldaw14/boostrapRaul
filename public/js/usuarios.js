@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Llamar a la función para inicializar las filas al cargar la página
+    
     initializeRowStates();
 });
 
@@ -180,7 +180,7 @@ function initializeRowStates() {
                 console.log("Fila activa procesada:", row);
             }
 
-            // Verificar la aplicación de la clase CSS
+           
             console.log("Clase aplicada:", row.classList);
         }
         
@@ -189,30 +189,30 @@ function initializeRowStates() {
 
 // Función de acción de bloquear/desbloquear
 function confirmAction(action, button) {
-    let row = button.closest('tr'); // Obtener la fila más cercana
-    let statusCell = row.querySelector('.estado'); // Columna de estado
+    let row = button.closest('tr'); 
+    let statusCell = row.querySelector('.estado');
     let message = `¿Estás seguro de que quieres ${action} este usuario?`;
 
     if (confirm(message)) {
         // Acción de bloqueo
         if (action === 'bloquear') {
-            row.classList.add('usuario-bloqueado'); // Cambiar la opacidad de la fila
-            statusCell.textContent = 'Bloqueado'; // Cambiar el estado a Bloqueado
-            // Cambiar el botón a "Desbloquear"
-            button.innerHTML = '<i class="fas fa-unlock"></i>'; // Cambio de ícono
-            button.setAttribute('onclick', 'confirmAction("desbloquear", this)'); // Cambiar acción del botón
+            row.classList.add('usuario-bloqueado');
+            statusCell.textContent = 'Bloqueado'; 
+           
+            button.innerHTML = '<i class="fas fa-unlock"></i>'; 
+            button.setAttribute('onclick', 'confirmAction("desbloquear", this)'); 
         }
-        // Acción de desbloqueo
+        
         else if (action === 'desbloquear') {
-            row.classList.remove('usuario-bloqueado'); // Recuperar la opacidad normal
-            statusCell.textContent = 'Activo'; // Cambiar el estado a Activo
-            // Cambiar el botón a "Bloquear"
-            button.innerHTML = '<i class="fas fa-lock"></i>'; // Cambio de ícono
-            button.setAttribute('onclick', 'confirmAction("bloquear", this)'); // Cambiar acción del botón
+            row.classList.remove('usuario-bloqueado');
+            statusCell.textContent = 'Activo'; 
+            
+            button.innerHTML = '<i class="fas fa-lock"></i>'; 
+            button.setAttribute('onclick', 'confirmAction("bloquear", this)'); 
         }
         // Acción de eliminar
         else if (action === 'eliminar') {
-            row.remove(); // Eliminar la fila
+            row.remove(); 
         }
     }
 }
@@ -222,28 +222,28 @@ function confirmAction(action, button) {
 
 //Script para usuario detallado
 function listasPublicaciones(action, button) {
-    let row = button.closest('li'); // Obtener la fila más cercana
-    let statusCell = row.querySelector('.estado'); // Columna de estado
+    let row = button.closest('li'); 
+    let statusCell = row.querySelector('.estado'); 
     let message = `¿Estás seguro de que quieres ${action} esta publicación?`;
 
     if (confirm(message)) {
         // Acción de bloqueo
         if (action === 'bloquear') {
-            row.classList.add('publicacion-bloqueada'); // Cambiar la opacidad de la fila
-            // Cambiar el botón a "Desbloquear"
-            button.innerHTML = '<i class="fas fa-unlock"></i>'; // Cambio de ícono
-            button.setAttribute('onclick', 'confirmAction("desbloquear", this)'); // Cambiar acción del botón
+            row.classList.add('publicacion-bloqueada'); 
+            
+            button.innerHTML = '<i class="fas fa-unlock"></i>'; 
+            button.setAttribute('onclick', 'confirmAction("desbloquear", this)'); 
         }
         // Acción de desbloqueo
         else if (action === 'desbloquear') {
-            row.classList.remove('publicacion-bloqueada'); // Recuperar la opacidad normal
-            // Cambiar el botón a "Bloquear"
-            button.innerHTML = '<i class="fas fa-lock"></i>'; // Cambio de ícono
-            button.setAttribute('onclick', 'confirmAction("bloquear", this)'); // Cambiar acción del botón
+            row.classList.remove('publicacion-bloqueada'); 
+            
+            button.innerHTML = '<i class="fas fa-lock"></i>'; 
+            button.setAttribute('onclick', 'confirmAction("bloquear", this)'); 
         }
         // Acción de eliminar
         else if (action === 'eliminar') {
-            row.remove(); // Eliminar la fila
+            row.remove(); 
         }
     }
 }
